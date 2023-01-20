@@ -1,0 +1,85 @@
+Exercise: 1) What is the method signature (return type, method name, and parameters) of the last function in this blob?
+
+return type: int
+method name: cmd_worktree
+parameters: ac, av, prefix
+
+/////////////////////////////////////////////////////////////////////
+
+Exercise: 2) What is the latest version of the release notes (RelNotes....txt) for the git repository?
+
+1.5.2
+
+/////////////////////////////////////////////////////////////////////
+
+Exercise: 3) What is the output of git cat-file -p 83484f | tail -4 | head -1? Briefly explain what this command does.
+
+Output:
+100644 blob f55d4083edd518a0dad26a37ac4d5c6877184c4f  tutorial.txt
+
+Tail and head combined together is used to get the lines from the midst of the file.
+For suppose if we want to get lines from 21 to 25, then the following command is used: git cat-file -p 83484f | tail -21 | head -4
+
+git cat-file -p 83484f | tail -4 | head -1 :
+This command is used to get 4th line
+
+////////////////////////////////////////////////////////////////////
+
+Exercise: 5) What is the commit message submitted with this commit?
+
+l10n: de.po: Update German translation for Git v2.31.0
+
+///////////////////////////////////////////////////////////////////
+
+Exercise: 6) Write a bash command(s) to search the commit graph for commits that mention the word "refactored". Then, run the command and add the output (answer should include command and output).
+
+PAGER='head -n 80' git log --graph --oneline | git grep "refactored" # You can edit this for Exercise 6
+
+Documentation/RelNotes/1.5.5.txt:   launches user's preferred browser has 
+been refactored.
+Documentation/RelNotes/2.17.0.txt:   how the packfile is indexed with obje
+ct names) has been refactored
+Documentation/RelNotes/2.25.0.txt: * The implementation of "git log --grap
+h" got refactored and then its
+Documentation/RelNotes/2.26.0.txt: * Underlying machinery of "git bisect--
+helper" is being refactored
+Documentation/RelNotes/2.27.0.txt: * The code to interface with GnuPG has 
+been refactored.
+Documentation/RelNotes/2.29.0.txt:   have been refactored and then
+ support for "nvim" has been added.
+Documentation/RelNotes/2.7.0.txt: * The implementation of "git mailinfo" w
+as refactored so that a
+Documentation/RelNotes/2.8.0.txt: * The ref-filter's format-parsing code h
+as been refactored, in
+Documentation/RelNotes/2.9.0.txt: * The code for warning_errno/die_errno h
+as been refactored and a new
+builtin/checkout.c:      * cache entry.  The code in write_entry() needs
+ to be refactored
+contrib/hooks/multimail/CHANGES:  multiple ways has been considerably 
+refactored and modified.
+t/helper/test-fast-rebase.c: * rebase.c should be refactored to us
+--More--
+
+/////////////////////////////////////////////////////////////////////
+
+Exercise: 7) What is the name of the first file listed that changed between versions 2.31.0 and 2.31.1?
+
+:000000 100644 0000000000 f9b06b8e1b A  Documentation/RelNotes/2.31.1.txt
+
+/////////////////////////////////////////////////////////////////////
+
+Exercise: 8) Provide a list of all the branches for the git repository.
+
+[root@docable git]$ git branch -a
+* master
+  todo
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/jch
+  remotes/origin/main
+  remotes/origin/maint
+  remotes/origin/master
+  remotes/origin/next
+  remotes/origin/seen
+  remotes/origin/todo
+
+

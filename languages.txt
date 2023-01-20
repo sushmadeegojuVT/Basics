@@ -1,0 +1,6 @@
+1. What is your most favourite programming language? Why?
+
+My favourite programming language is C++. I feel it is quick in compilation and execution, which is really necessary in real-time environments. It gives you the opportunity to learn the code in depth. If we use Python or Java, we just use some library functions and don't really get in depth to learn the logic behind it. 
+
+2. Is your favorite language the one you are also most experienced with? If not, which language are you most experienced with?
+Yes, C++ is the language I have most experience with. As I have worked in Networks division at Samsung, we need the results quickly without any latency. The whole codebase is in C++, but we used to use Python too to write automation scripts where execution time is not a constraint. 
